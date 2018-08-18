@@ -5,14 +5,6 @@ window.onload = () => bootstrap();
 
 function bootstrap() {
 
-    let elementOne: ElementDefinition = <ElementDefinition>{
-        position: {x:10,y:10}
-    };
-
-    let elementTwo: ElementDefinition = <ElementDefinition>{
-        position: {x:20,y:10}
-    };
-
     let cytoContainer = document.getElementById('cyto-container');
 
     let cytoscopeOptions: CytoscapeOptions = {
@@ -21,16 +13,14 @@ function bootstrap() {
         boxSelectionEnabled: false,
         autounselectify: true,
 
-        elements: [ // list of graph elements to start with
-            { // node a
-                data: { id: 'a' }
-            },
-            { // node b
-                data: { id: 'b' }
-            },
-            { // edge ab
-                data: { id: 'ab', source: 'a', target: 'b' }
-            }
+        elements: [
+            {data: { id: 'root' }},
+            {data: { id: 'child1' }},
+            {data: { id: 'child2' }},
+            {data: { id: 'child3' }},
+            {data: { id: 'root to 1', source: 'root', target: 'child1' }},
+            {data: { id: 'root to 2', source: 'root', target: 'child2' }},
+            {data: { id: 'root to 3', source: 'root', target: 'child3' }}
         ],
 
         style: [ // the stylesheet for the graph
