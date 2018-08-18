@@ -8,6 +8,15 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "@types/cytoscape": "^3.2.7",
     "cytoscape": "^3.2.16"
+  },
+  "devDependencies": {
+    "@webpack-cli/init": "^0.1.0",
+    "jasmine": "^3.2.0",
+    "ts-loader": "^4.5.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }
