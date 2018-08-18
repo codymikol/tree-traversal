@@ -1,0 +1,13 @@
+{
+  "name": "tree-traversal",
+  "version": "1.0.0",
+  "description": "A tree traversal visualization",
+  "main": "index.js",
+  "repository": "git@github.com:codymikol/tree-traversal.git",
+  "author": "codymikol@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "cytoscape": "^3.2.16"
+  }
+}
